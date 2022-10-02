@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alert </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+   <!--  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Importacion de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Importacion de Font Awesome -->
+	<link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <table class="table table-bordered">
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+               Alerta Basica
+            </td>
+            <td>
+                <button type="button" class="btn btn-info m-btn m-btn--custom" id="m_sweetalert_demo_1">
+                    Show me
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                Titulo, imagen, Texto e icono
+            </td>
+            <td>
+                <button type="button" class="btn btn-focus m-btn m-btn--custom" id="m_sweetalert_demo_2">
+                    Show me
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                Tipo de icono a mostrar
+                <code>
+                    warning
+                </code>
+                ,
+                <code>
+                    error
+                </code>
+                ,
+                <code>
+                    success
+                </code>
+                ,
+                <code>
+                    info
+                </code>
+                and
+                <code>
+                    question
+                </code>
+                state icons
+            </td>
+            <td>
+                <button type="button" class="btn btn-warning m-btn m-btn--custom" id="m_sweetalert_demo_3_1">
+                    Warning
+                </button>
+                <button type="button" class="btn btn-danger m-btn m-btn--custom" id="m_sweetalert_demo_3_2">
+                    Error
+                </button>
+                <button type="button" class="btn btn-success m-btn m-btn--custom" id="m_sweetalert_demo_3_3">
+                    Success
+                </button>
+                <button type="button" class="btn btn-info m-btn m-btn--custom" id="m_sweetalert_demo_3_4">
+                    Info
+                </button>
+                <button type="button" class="btn btn-metal m-btn m-btn--custom" id="m_sweetalert_demo_3_5">
+                    Question
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                Cambiar color del boton e incluir icono en el
+            </td>
+            <td>
+                <button type="button" class="btn btn-success m-btn m-btn--custom" id="m_sweetalert_demo_4">
+                    Show me
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                Boton con Icono
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger m-btn m-btn--custom" id="m_sweetalert_demo_5">
+                    Show me
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                A custom positioned dialog with timer to auto close
+            </td>
+            <td>
+                <button type="button" class="btn btn-success m-btn m-btn--custom" id="m_sweetalert_demo_6">
+                    Show me
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                jQuery HTML with custom animate.css animation
+            </td>
+            <td>
+                <button type="button" class="btn btn-focus m-btn m-btn--custom" id="m_sweetalert_demo_7">
+                    Show me
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                A warning message, with a function attached to the confirm button
+            </td>
+            <td>
+                <button type="button" class="btn btn-info m-btn m-btn--custom" id="m_sweetalert_demo_8">
+                    Show me
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                By passing a parameter, you can execute something else for cancel
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger m-btn m-btn--custom" id="m_sweetalert_demo_9">
+                    Show me
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                A message with a custom image and CSS animation disabled
+            </td>
+            <td>
+                <button type="button" class="btn btn-warning m-btn m-btn--custom" id="m_sweetalert_demo_10">
+                    Show me
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40%; vertical-align: middle;">
+                A message with auto close timer
+            </td>
+            <td>
+                <button type="button" class="btn btn-metal m-btn m-btn--custom" id="m_sweetalert_demo_11">
+                    Show me
+                </button>
+            </td>
+        </tr>
+    </table>
+    <script src="js/logic.js"></script>
+    <script>
+        //== Class Initialization
+        jQuery(document).ready( ()=> {
+            console.log('ObjectjQuery::::');
+            SweetAlert2Demo.init();
+        });
+        /* $(document).on('ready', () => {
+        console.log('Object::::');
+        SweetAlert2Demo.init();
+        }) */
+        /* (function ($) {
+            console.log('Object::::');
+            SweetAlert2Demo.init();
+        })(jQuery); */
+    </script>
+</body>
+
+</html>
